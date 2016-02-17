@@ -1,0 +1,186 @@
+﻿.Giusticontainer {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .Giusticontainer {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .Giusticontainer {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .Giusticontainer {
+    width: 100%;
+  }
+}
+.Giusticontainer-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.Giusticontainer > .navbar-header,
+.Giusticontainer-fluid > .navbar-header,
+.Giusticontainer > .navbar-collapse,
+.Giusticontainer-fluid > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  .Giusticontainer > .navbar-header,
+  .Giusticontainer-fluid > .navbar-header,
+  .Giusticontainer > .navbar-collapse,
+  .Giusticontainer-fluid > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .navbar > .Giusticontainer .navbar-brand,
+  .navbar > .Giusticontainer-fluid .navbar-brand {
+    margin-left: -15px;
+  }
+}
+.Giusticontainer .jumbotron,
+.Giusticontainer-fluid .jumbotron {
+  border-radius: 6px;
+}
+.jumbotron .Giusticontainer {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding: 48px 0;
+  }
+  .Giusticontainer .jumbotron,
+  .Giusticontainer-fluid .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 63px;
+  }
+}
+.Giusticontainer:before,
+.Giusticontainer:after,
+.Giusticontainer-fluid:before,
+.Giusticontainer-fluid:after,
+.Giusticontainer:after,
+.Giusticontainer-fluid:after,
+
+.divError
+{
+    background-color: #f8f8f8;
+    clear: both;
+    padding: 5px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #cecece;
+    margin-top: 20px;
+    color: Red;
+}
+
+.dropdown-submenu {
+position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+top: 0;
+left: 100%;
+margin-top: -6px;
+margin-left: -1px;
+-webkit-border-radius: 0 6px 6px 6px;
+-moz-border-radius: 0 6px 6px;
+border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+display: block;
+}
+
+.liLink > li:hover,
+.liLink > li:focus {
+  color: #262626;
+  background-color: #f5f5f5;
+}
+
+.dropdown-submenu>a:after {
+display: block;
+content: " ";
+float: right;
+width: 0;
+height: 0;
+border-color: transparent;
+border-style: solid;
+border-width: 5px 0 5px 5px;
+border-left-color: #ccc;
+margin-top: 5px;
+margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+left: -100%;
+margin-left: 10px;
+-webkit-border-radius: 6px 0 6px 6px;
+-moz-border-radius: 6px 0 6px 6px;
+border-radius: 6px 0 6px 6px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 35px;
+  background-color: #f8f8f8;
+  border-top: 1px solid;
+    border-color: #e7e7e7;
+
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 5px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: -15px;
+}
+
+code {
+  font-size: 80%;
+}
