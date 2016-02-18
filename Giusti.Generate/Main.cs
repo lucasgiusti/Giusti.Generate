@@ -115,6 +115,8 @@ namespace Giusti.Generate
                 Directory.CreateDirectory(string.Format("{0}\\{1}.{2}\\{3}", diretorioProjeto, nomeProjeto, "Web", "Library"));
                 Directory.CreateDirectory(string.Format("{0}\\{1}.{2}\\{3}", diretorioProjeto, nomeProjeto, "Web", "Properties"));
                 Directory.CreateDirectory(string.Format("{0}\\{1}.{2}\\{3}", diretorioProjeto, nomeProjeto, "Web", "Scripts"));
+                Directory.CreateDirectory(string.Format("{0}\\{1}.{2}\\{3}\\{4}", diretorioProjeto, nomeProjeto, "Web", "Scripts", "angular-ui"));
+                Directory.CreateDirectory(string.Format("{0}\\{1}.{2}\\{3}\\{4}", diretorioProjeto, nomeProjeto, "Web", "Scripts", "i18n"));
                 Directory.CreateDirectory(string.Format("{0}\\{1}.{2}\\{3}", diretorioProjeto, nomeProjeto, "Web", "Views"));
                 Directory.CreateDirectory(string.Format("{0}\\{1}.{2}\\{3}\\{4}", diretorioProjeto, nomeProjeto, "Web", "Views", "Home"));
                 Directory.CreateDirectory(string.Format("{0}\\{1}.{2}\\{3}\\{4}", diretorioProjeto, nomeProjeto, "Web", "Views", "Shared"));
@@ -183,6 +185,9 @@ namespace Giusti.Generate
                     "..\\..\\Modelos\\Web\\app\\controllers",
                     "..\\..\\Modelos\\Web\\app\\templates",
                     "..\\..\\Modelos\\Web\\Properties",
+                    "..\\..\\Modelos\\Web\\Scripts",
+                    "..\\..\\Modelos\\Web\\Scripts\\angular-ui",
+                    "..\\..\\Modelos\\Web\\Scripts\\i18n",
                     "..\\..\\Modelos\\Model",
                     "..\\..\\Modelos\\Data",
                     "..\\..\\Modelos\\Business",
@@ -211,6 +216,9 @@ namespace Giusti.Generate
                     string.Format("{0}\\{1}.{2}\\{3}\\{4}", diretorioProjeto, nomeProjeto, "Web", "app", "controllers"),
                     string.Format("{0}\\{1}.{2}\\{3}\\{4}", diretorioProjeto, nomeProjeto, "Web", "app", "templates"),
                     string.Format("{0}\\{1}.{2}\\{3}", diretorioProjeto, nomeProjeto, "Web", "Properties"),
+                    string.Format("{0}\\{1}.{2}\\{3}", diretorioProjeto, nomeProjeto, "Web", "Scripts"),
+                    string.Format("{0}\\{1}.{2}\\{3}\\{4}", diretorioProjeto, nomeProjeto, "Web", "Scripts", "angular-ui"),
+                    string.Format("{0}\\{1}.{2}\\{3}\\{4}", diretorioProjeto, nomeProjeto, "Web", "Scripts", "i18n"),
                     string.Format("{0}\\{1}.{2}", diretorioProjeto, nomeProjeto, "Model"),
                     string.Format("{0}\\{1}.{2}", diretorioProjeto, nomeProjeto, "Data"),
                     string.Format("{0}\\{1}.{2}", diretorioProjeto, nomeProjeto, "Business"),
