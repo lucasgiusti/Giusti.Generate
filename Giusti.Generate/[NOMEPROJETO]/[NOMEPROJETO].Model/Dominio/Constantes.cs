@@ -50,7 +50,7 @@ namespace [NOMEPROJETO].Model.Dominio
         public static readonly string FuncionalidadeLog = "16";
         public static readonly string FuncionalidadeLogConsulta = "17";
 
-        public static readonly string FuncionalidadeNomeLog = "Usuário";
-        public static readonly string FuncionalidadeNomeLogConsulta = "Usuário Consulta";
+        public static readonly string FuncionalidadeNomeLog = "Log";
+        public static readonly string FuncionalidadeNomeLogConsulta = "Log Consulta";
     }
 }
