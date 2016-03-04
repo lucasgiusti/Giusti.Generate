@@ -186,9 +186,9 @@ namespace Giusti.Generate
             bool existeDiretorio = Directory.Exists(diretorioProjeto);
             if (existeDiretorio)
             {
-                string[] diretorios = Directory.GetDirectories(diretorio);
+                string[] diretorios = Directory.GetDirectories(diretorioProjeto);
 
-                if (diretorios.Length > 0)
+                if (diretorios.Length > 1)
                 {
                     MessageBox.Show("Projeto existente");
                     return false;

@@ -1,9 +1,9 @@
 C:\Users\giust\Documents\Visual Studio 2015\Projects\Giusti.Generate\Giusti.Generate\bin\Debug\Giusti.Generate.exe.config
 C:\Users\giust\Documents\Visual Studio 2015\Projects\Giusti.Generate\Giusti.Generate\bin\Debug\Giusti.Generate.exe
 C:\Users\giust\Documents\Visual Studio 2015\Projects\Giusti.Generate\Giusti.Generate\bin\Debug\Giusti.Generate.pdb
-C:\Users\giust\Documents\Visual Studio 2015\Projects\Giusti.Generate\Giusti.Generate\obj\Debug\Giusti.Generate.csprojResolveAssemblyReference.cache
 C:\Users\giust\Documents\Visual Studio 2015\Projects\Giusti.Generate\Giusti.Generate\obj\Debug\Giusti.Generate.Main.resources
 C:\Users\giust\Documents\Visual Studio 2015\Projects\Giusti.Generate\Giusti.Generate\obj\Debug\Giusti.Generate.Properties.Resources.resources
 C:\Users\giust\Documents\Visual Studio 2015\Projects\Giusti.Generate\Giusti.Generate\obj\Debug\Giusti.Generate.csproj.GenerateResource.Cache
 C:\Users\giust\Documents\Visual Studio 2015\Projects\Giusti.Generate\Giusti.Generate\obj\Debug\Giusti.Generate.exe
 C:\Users\giust\Documents\Visual Studio 2015\Projects\Giusti.Generate\Giusti.Generate\obj\Debug\Giusti.Generate.pdb
+C:\Users\giust\Documents\Visual Studio 2015\Projects\Giusti.Generate\Giusti.Generate\obj\Debug\Giusti.Generate.csprojResolveAssemblyReference.cache
