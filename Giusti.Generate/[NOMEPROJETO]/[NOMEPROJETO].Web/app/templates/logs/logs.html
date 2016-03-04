@@ -1,0 +1,36 @@
+﻿<div ng-init="getLogs()">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <div class="col-sm-offset-1 col-sm-10">
+                <legend>{{heading}}</legend>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-1 col-sm-10">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th width="1%">Registro</th>
+                            <th>Ação</th>
+                            <th>Usuário</th>
+                            <th width="15%">Origem</th>
+                            <th width="1%">Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="log in logs | inicioPaginacao: (currentPage-1)*itemPerPage | limitTo: itemPerPage">
+                            <td>{{log.registroId}}</td>
+                            <td>{{log.acao}}</td>
+                            <td>{{log.usuario.nome}}</td>
+                            <td>{{log.origemAcesso}}</td>
+                            <td>{{log.dataInclusao | date:'dd/MM/yyyy'}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style="text-align: center">
+            <uib-pagination total-items="total" ng-show="(total > 0)" items-per-page="itemPerPage" ng-model="currentPage" ng-change="pageChanged()" max-size="maxSize" boundary-links="true" class="pagination-sm" force-ellipses="true"></uib-pagination>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,11 @@
+﻿<div ng-init="cookieDestroy()">
+    <form class="form-signin">
+        <legend>{{heading}}</legend>
+        <label for="inputEmail" class="sr-only">Email</label>
+        <input class="form-control" placeholder="Email" ng-model="usuario.email" autofocus>
+        <label for="inputPassword" class="sr-only">Senha</label>
+        <input type="password" class="form-control" placeholder="Senha" ng-model="usuario.senha">
+        <button class="btn btn-lg btn-primary btn-block" ng-click="postLogin()">Entrar</button>
+        <a href="esquecisenha" class="btn-block">Esqueci minha senha</a>
+    </form>
+</div>

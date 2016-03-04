@@ -1,0 +1,12 @@
+﻿<div>
+    <form class="form-signin">
+        <legend>{{heading}}</legend>
+        <label class="sr-only">Senha</label>
+        <input type="password" class="form-control" placeholder="Senha" ng-model="usuario.senha">
+        <label class="sr-only">Nova Senha</label>
+        <input type="password" class="form-control" placeholder="Nova Senha" ng-model="usuario.novaSenha">
+        <label class="sr-only">Confirmação de Nova Senha</label>
+        <input type="password" class="form-control" placeholder="Confirmação de Nova Senha" ng-model="usuario.senhaConfirmacao">
+        <button class="btn btn-lg btn-primary btn-block" ng-click="putAlteraSenha()">Alterar</button>
+    </form>
+</div>
