@@ -26,8 +26,8 @@ namespace Giusti.Generate
         string userId = string.Empty;
         string password = string.Empty;
         string initialCatalog = string.Empty;
-        string footerProjeto = string.Empty;
-        string urlBaseIIS = string.Empty;
+        string emailRemetente = string.Empty;
+        string diretorioLogServiceMail = string.Empty;
 
         public Main()
         {
@@ -43,6 +43,15 @@ namespace Giusti.Generate
                 txtDiretorio.Text = string.Empty;
         }
 
+        private void btnDiretorioArquivoLogServiceMail_Click(object sender, EventArgs e)
+        {
+            DialogResult result = folderBrowserDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+                txtDiretorioLogServiceMail.Text = folderBrowserDialog1.SelectedPath;
+            else
+                txtDiretorioLogServiceMail.Text = string.Empty;
+        }
+
         private void btnGerar_Click(object sender, EventArgs e)
         {
             try
@@ -54,8 +63,8 @@ namespace Giusti.Generate
                 userId = txtUserId.Text.Trim();
                 password = txtPassword.Text.Trim();
                 initialCatalog = txtInitialCatalog.Text.Trim();
-                footerProjeto = "Sistema Template Giusti.";
-                urlBaseIIS = "giustitemplate";
+                emailRemetente = txtEmailRemetente.Text.Trim();
+                diretorioLogServiceMail = txtDiretorioLogServiceMail.Text.Trim();
 
                 if (DadosValidos())
                 {
@@ -74,7 +83,6 @@ namespace Giusti.Generate
                 MessageBox.Show("Erro ao gerar projeto: " + ex.Message);
             }
         }
-
 
         private void CopiaArquivos(string diretorio, string diretorioDestino)
         {
@@ -124,8 +132,9 @@ namespace Giusti.Generate
                     content = content.Replace("[GUIDPROJETOMAIL]", guidProjetoMail);
 
                     content = content.Replace("[NOMEPROJETO]", nomeProjeto);
-                    content = content.Replace("[URLBASEIIS]", urlBaseIIS);
-                    content = content.Replace("[FOOTERPROJETO]", footerProjeto);
+                    content = content.Replace("[URLBASEIIS]", nomeProjeto.ToLower());
+                    content = content.Replace("[EMAILREMETENTESERVICEMAIL]", emailRemetente);
+                    content = content.Replace("[DIRETORIOLOGSERVICEMAIL]", diretorioLogServiceMail);
                     
                     content = content.Replace("[DATASOURCE]", dataSource);
                     content = content.Replace("[USERID]", userId);
